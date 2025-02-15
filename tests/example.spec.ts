@@ -20,7 +20,7 @@ test('get started link', async ({ page }) => {
 });
 
 
-test.only('End 2 End Rahul Shetty Cart Application Practice',async({browser,page})=>{
+test('End 2 End Rahul Shetty Cart Application Practice',async({browser,page})=>{
   await page.goto("https://rahulshettyacademy.com/client");
  const userName=page.locator("#userEmail");
  const userPassword=page.locator("#userPassword");
@@ -75,4 +75,10 @@ test.only('End 2 End Rahul Shetty Cart Application Practice',async({browser,page
     break;
   }
  }
+});
+
+test('testing advanced playwright locators', async({browser,page})=>{
+  await page.goto("https://rahulshettyacademy.com/angularpractice/");
+  const framePage=page.frameLocator("<frame_id>");
+ 
 });

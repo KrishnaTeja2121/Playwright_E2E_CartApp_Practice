@@ -1,15 +1,15 @@
 {
-  "name": "playwright_e2e_cartapp_practice",
+  "name": "PlayWrightAutomation",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test tests/demo.spec.js --headed"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.49.1",
-    "@types/node": "^22.10.2"
+    "@playwright/test": "^1.19.1"
   }
 }
